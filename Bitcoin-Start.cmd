@@ -1,0 +1,1 @@
+Bitcoin-generator.exe -i Gen.txt -b -o key.txt -r 1

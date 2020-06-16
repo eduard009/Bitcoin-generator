@@ -1,0 +1,35 @@
+Bitcoin-generator.exe
+
+Donation 1AN9Nm25q3BK7XuMVq9fHt5kwagjGyyznr
+
+Not enough argument
+Bitcoin-generator [-check] [-v] [-u] [-b] [-c] [-gpu] [-stop] [-i inputfile]
+             [-gpuId gpuId1[,gpuId2,...]] [-g gridSize1[,gridSize2,...]]
+             [-o outputfile] [-m maxFound] [-ps seed] [-s seed] [-t nbThread]
+             [-nosse] [-r rekey] [-check] [-kp] [-sp startPubKey]
+             [-rp privkey partialkeyfile] [prefix]
+
+ prefix: prefix to search (Can contains wildcard '?' or '*')
+ -v: Print version
+ -u: Search uncompressed addresses
+ -b: Search both uncompressed or compressed addresses
+ -c: Case unsensitive search
+ -gpu: Enable gpu calculation
+ -stop: Stop when all prefixes are found
+ -i inputfile: Get list of prefixes to search from specified file
+ -o outputfile: Output results to the specified file
+ -gpu gpuId1,gpuId2,...: List of GPU(s) to use, default is 0
+ -g gridSize1,gridSize2,...: Specify GPU(s) kernel gridsize, default is 8*(MP nu
+mber)
+ -m: Specify maximun number of prefixes found by each kernel call
+ -s seed: Specify a seed for the base key, default is random
+ -ps seed: Specify a seed concatened with a crypto secure random seed
+ -t threadNumber: Specify number of CPU thread, default is number of core
+ -nosse: Disable SSE hash function
+ -l: List cuda enabled devices
+ -check: Check CPU and GPU kernel vs CPU
+ -kp: Generate key pair
+ -rp privkey partialkeyfile: Reconstruct final private key(s) from partial key(s
+) info.
+ -sp startPubKey: Start the search with a pubKey (for private key splitting)
+ -r rekey: Rekey interval in MegaKey, default is disabled
